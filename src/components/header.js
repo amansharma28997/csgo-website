@@ -81,7 +81,7 @@ export default function Header() {
               component="div"
               sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
             >
-              Esports Portal
+              ESports Portal
             </Typography>
           </Stack>
           <Search>
