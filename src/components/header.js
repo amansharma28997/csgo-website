@@ -5,10 +5,8 @@ import {
   AppBar,
   Toolbar,
   IconButton,
-  Box,
   Typography,
   Stack,
-  CssBaseline,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
@@ -42,7 +40,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: "inherit",
   "& .MuiInputBase-input": {
     padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create("width"),
     width: "100%",
@@ -57,53 +54,50 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function Header() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <CssBaseline />
-      <AppBar position="static">
-        <Toolbar
-          sx={{
-            justifyContent: "space-between",
-          }}
-        >
-          <Stack direction="row" alignItems="center">
-            <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="open drawer"
-              sx={{ mr: 2 }}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Typography
-              variant="h6"
-              noWrap
-              component="div"
-              sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-            >
-              ESports Portal
-            </Typography>
-          </Stack>
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
-            />
-          </Search>
+    <AppBar position="sticky">
+      <Toolbar
+        sx={{
+          justifyContent: "space-between",
+        }}
+      >
+        <Stack direction="row" alignItems="center">
           <IconButton
             size="large"
-            edge="end"
+            edge="start"
             color="inherit"
             aria-label="open drawer"
             sx={{ mr: 2 }}
           >
             <MenuIcon />
           </IconButton>
-        </Toolbar>
-      </AppBar>
-    </Box>
+          <Typography
+            variant="h6"
+            noWrap
+            component="div"
+            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+          >
+            ESports Portal
+          </Typography>
+        </Stack>
+        <Search>
+          <SearchIconWrapper>
+            <SearchIcon />
+          </SearchIconWrapper>
+          <StyledInputBase
+            placeholder="Search…"
+            inputProps={{ "aria-label": "search" }}
+          />
+        </Search>
+        <IconButton
+          size="large"
+          edge="end"
+          color="inherit"
+          aria-label="open drawer"
+          sx={{ mr: 2 }}
+        >
+          <MenuIcon />
+        </IconButton>
+      </Toolbar>
+    </AppBar>
   );
 }

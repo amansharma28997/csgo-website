@@ -3,17 +3,16 @@ export default function Footer() {
     <footer
       style={{
         color: "#ffffff",
-        position: "fixed",
+        position: "sticky",
         bottom: 0,
-        margin: "0px",
-        padding: "0px",
-        minWidth: "100%",
-        maxWidth: "100%",
         background: "#512da8",
-        height: "auto",
       }}
     >
-      <center style={{ fontSize: "smaller" }}>&copy; Company</center>
+      <center
+        style={{ fontSize: "medium", padding: "12px", fontWeight: "500" }}
+      >
+        &copy; Company
+      </center>
     </footer>
   );
 }
