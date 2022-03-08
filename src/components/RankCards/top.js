@@ -7,9 +7,7 @@ import Typography from "@mui/material/Typography";
 
 export default class Top extends Component {
   render() {
-    const { rank, name, points } = this.props;
-    console.log("hitest", rank, name, points);
-    console.log("byetest", this.props);
+    const { rank, name, points, positionStatus, imageName } = this.props;
     return (
       <Card
         sx={{
@@ -18,9 +16,10 @@ export default class Top extends Component {
           //   minWidth: "25rem",
           padding: "5px",
           height: "20vh",
-          minHeight: "200px",
+          minHeight: "150px",
+          cursor: "pointer",
         }}
-        // elevation={0}
+        elevation={0}
       >
         <Box
           sx={{
@@ -60,15 +59,15 @@ export default class Top extends Component {
                 component="div"
                 style={{ fontWeight: "900" }}
               >
-                - Retained Same Spot
+                - {positionStatus}
               </Typography>
             </span>
           </CardContent>
         </Box>
         <CardMedia
           component="img"
-          sx={{ width: 1 / 3, mt: 2, mb: 2 }}
-          image="https://reactjs.org/logo-og.png"
+          sx={{ width: 1 / 3, mt: 2, mb: 2, objectFit: "contain" }}
+          image={imageName}
           alt="Astralis"
         />
         <Typography

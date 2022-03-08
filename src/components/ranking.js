@@ -2,26 +2,222 @@ import * as React from "react";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Top from "./RankCards/top";
-import { makeStyles } from "@mui/styles";
-
-const useStyles = makeStyles({
-  topStyles: {
-    paddingLeft: "10px",
-    paddingRight: "10px",
-  },
-});
+import FollowUp from "./RankCards/followup";
 
 export default function Ranking() {
-  const classes = useStyles();
-
   const teams = [
-    { rank: 1, name: "Astralis", points: 919 },
-    { rank: 2, name: "Natus Vincere", points: 715 },
-    { rank: 3, name: "Fnatic", points: 650 },
-    { rank: 4, name: "Mouz", points: 628 },
-    { rank: 5, name: "G2 Esports", points: 600 },
-    { rank: 6, name: "Liquid", points: 499 },
+    {
+      rank: 1,
+      name: "Astralis",
+      points: 919,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-Astralis_Logo.png"),
+    },
+    {
+      rank: 2,
+      name: "Natus Vincere",
+      points: 715,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-Natus_Vincere.png"),
+    },
+    {
+      rank: 3,
+      name: "Fnatic",
+      points: 650,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-Fnatic_2020_infoboximage.png"),
+    },
+    {
+      rank: 4,
+      name: "Mouz",
+      points: 628,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-Mouz_logo.png"),
+    },
+    {
+      rank: 5,
+      name: "G2 Esports",
+      points: 600,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-G2_Esports_2019.png"),
+    },
+    {
+      rank: 6,
+      name: "Liquid",
+      points: 499,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-Team_Liquid_2020.png"),
+    },
+    {
+      rank: 7,
+      name: "Mouz",
+      points: 628,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-Mouz_logo.png"),
+    },
+    {
+      rank: 8,
+      name: "G2 Esports",
+      points: 600,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-G2_Esports_2019.png"),
+    },
+    {
+      rank: 9,
+      name: "Liquid",
+      points: 499,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-Team_Liquid_2020.png"),
+    },
+    {
+      rank: 10,
+      name: "Mouz",
+      points: 628,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-Mouz_logo.png"),
+    },
+    {
+      rank: 11,
+      name: "G2 Esports",
+      points: 600,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-G2_Esports_2019.png"),
+    },
+    {
+      rank: 12,
+      name: "Liquid",
+      points: 499,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-Team_Liquid_2020.png"),
+    },
+    {
+      rank: 13,
+      name: "Mouz",
+      points: 628,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-Mouz_logo.png"),
+    },
+    {
+      rank: 14,
+      name: "G2 Esports",
+      points: 600,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-G2_Esports_2019.png"),
+    },
+    {
+      rank: 15,
+      name: "Liquid",
+      points: 499,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-Team_Liquid_2020.png"),
+    },
+    {
+      rank: 16,
+      name: "Mouz",
+      points: 628,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-Mouz_logo.png"),
+    },
+    {
+      rank: 17,
+      name: "G2 Esports",
+      points: 600,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-G2_Esports_2019.png"),
+    },
+    {
+      rank: 18,
+      name: "Liquid",
+      points: 499,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-Team_Liquid_2020.png"),
+    },
+    {
+      rank: 19,
+      name: "Mouz",
+      points: 628,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-Mouz_logo.png"),
+    },
+    {
+      rank: 20,
+      name: "G2 Esports",
+      points: 600,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-G2_Esports_2019.png"),
+    },
+    {
+      rank: 21,
+      name: "Liquid",
+      points: 499,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-Team_Liquid_2020.png"),
+    },
+    {
+      rank: 22,
+      name: "Mouz",
+      points: 628,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-Mouz_logo.png"),
+    },
+    {
+      rank: 23,
+      name: "G2 Esports",
+      points: 600,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-G2_Esports_2019.png"),
+    },
+    {
+      rank: 24,
+      name: "Liquid",
+      points: 499,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-Team_Liquid_2020.png"),
+    },
+    {
+      rank: 25,
+      name: "Mouz",
+      points: 628,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-Mouz_logo.png"),
+    },
+    {
+      rank: 26,
+      name: "G2 Esports",
+      points: 600,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-G2_Esports_2019.png"),
+    },
+    {
+      rank: 27,
+      name: "Liquid",
+      points: 499,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-Team_Liquid_2020.png"),
+    },
+    {
+      rank: 28,
+      name: "Mouz",
+      points: 628,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-Mouz_logo.png"),
+    },
+    {
+      rank: 29,
+      name: "G2 Esports",
+      points: 600,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-G2_Esports_2019.png"),
+    },
+    {
+      rank: 30,
+      name: "Liquid",
+      points: 499,
+      positionStatus: "Retained Same Spot",
+      imageName: require("../assets/images/600px-Team_Liquid_2020.png"),
+    },
   ];
+
   return (
     <span
       style={{
@@ -45,143 +241,36 @@ export default function Ranking() {
         World Rankings
       </Typography>
 
-      {/* <li key={team.id}>{team.name}</li> */}
-      <Grid
-        container
-        spacing={1}
-        // className={classes.topStyles}
-      >
-        {teams.map((team, index) => (
-          <Grid item lg={4} xs={12}>
-            <Top
-              rank={team.rank}
-              name={team.name}
-              points={team.points}
-              key={index}
-            />
-          </Grid>
-        ))}
+      <Grid container spacing={1}>
+        {teams
+          .filter((team) => team.rank <= 3)
+          .map((team, index) => (
+            <Grid item lg={4} xs={12} key={index}>
+              <Top
+                key={index}
+                rank={team.rank}
+                name={team.name}
+                points={team.points}
+                positionStatus={team.positionStatus}
+                imageName={team.imageName}
+              />
+            </Grid>
+          ))}
+        {teams
+          .filter((team) => team.rank > 3)
+          .map((team, index) => (
+            <Grid item lg={4} xs={12} key={index}>
+              <FollowUp
+                key={index}
+                rank={team.rank}
+                name={team.name}
+                points={team.points}
+                positionStatus={team.positionStatus}
+                imageName={team.imageName}
+              />
+            </Grid>
+          ))}
       </Grid>
-
-      {/* // <Grid container>
-        //   <Card
-            sx={{
-              display: "flex",
-              maxWidth: "25rem",
-              minWidth: "25rem",
-              padding: "5px",
-              // display: "inherit",
-            }}
-            elevation={0}
-          >
-            <Box sx={{ display: "flex", flexDirection: "column", width: 1 }}>
-              <CardContent sx={{ flex: "1 0 auto" }}>
-                <Typography component="div" variant="h5">
-                  {team.name}
-                </Typography>
-                <Typography
-                  variant="subtitle1"
-                  color="text.primary"
-                  component="div"
-                >
-                  {team.points} Points
-                </Typography>
-                <Typography
-                  variant="subtitle2"
-                  color="text.secondary"
-                  component="div"
-                >
-                  - Retained Same Spot
-                </Typography>
-              </CardContent>
-            </Box>
-            <CardMedia
-              component="img"
-              sx={{ width: 1 / 3 }}
-              image="https://reactjs.org/logo-og.png"
-              // style={{ padding: "1rem" }}
-              alt="Astralis"
-            />
-            <Typography
-              variant="h1"
-              color="text.secondary"
-              sx={{ width: 1 / 3 }}
-              style={{
-                display: "flex",
-                alignteams: "center",
-                justifyContent: "space-around",
-                fontWeight: 500,
-                paddingLeft: "1rem",
-              }}
-            >
-              {team.id}
-            </Typography>
-          </Card>
-        </Grid>
-        <Card
-          sx={{
-            display: "flex",
-            maxWidth: "25rem",
-            minWidth: "25rem",
-            padding: "5px",
-          }}
-          elevation={0}
-        >
-          <Box sx={{ display: "flex", flexDirection: "column", width: 1 }}>
-            <CardContent sx={{ flex: "1 0 auto" }}>
-              <Typography component="div" variant="h5">
-                {team.name}
-              </Typography>
-              <Typography
-                variant="subtitle1"
-                color="text.primary"
-                component="div"
-              >
-                {team.points} Points
-              </Typography>
-              <Typography
-                variant="subtitle2"
-                color="text.secondary"
-                component="div"
-              >
-                - Retained Same Spot
-              </Typography>
-            </CardContent>
-          </Box>
-          <CardMedia
-            component="img"
-            sx={{ width: 1 / 3 }}
-            image="https://reactjs.org/logo-og.png"
-            // style={{ padding: "1rem" }}
-            alt="Astralis"
-          />
-          <Typography
-            variant="h1"
-            color="text.secondary"
-            sx={{ width: 1 / 3 }}
-            style={{
-              display: "flex",
-              alignteams: "center",
-              justifyContent: "space-around",
-              fontWeight: 500,
-              paddingLeft: "1rem",
-            }}
-          >
-            {team.id}
-          </Typography>
-        </Card>
-      
-      <Grid container spacing={4} className={classes.topStyles}>
-        <Grid item lg={4} xs={12}>
-          <Top />
-        </Grid>
-        <Grid item lg={4} xs={12}>
-          <Top />
-        </Grid>
-        <Grid item lg={4} xs={12}>
-          <Top />
-        </Grid>
-      </Grid> */}
     </span>
   );
 }
