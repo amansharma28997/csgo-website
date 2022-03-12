@@ -19,7 +19,8 @@ export default class Top extends Component {
           minHeight: "150px",
           cursor: "pointer",
         }}
-        elevation={0}
+        elevation={2}
+        // variant="outlined"
       >
         <Box
           sx={{
@@ -40,7 +41,7 @@ export default class Top extends Component {
               component="div"
               variant="h6"
               color="text.disabled"
-              style={{ textTransform: "uppercase" }}
+              style={{ textTransform: "uppercase", fontWeight: 600 }}
             >
               {name}
             </Typography>
@@ -54,7 +55,7 @@ export default class Top extends Component {
                 {points} Points
               </Typography>
               <Typography
-                variant="subtitle2"
+                variant="caption"
                 color="text.disabled"
                 component="div"
                 style={{ fontWeight: "900" }}

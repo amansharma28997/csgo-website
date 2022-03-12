@@ -5,7 +5,7 @@ export default function Footer() {
         color: "#ffffff",
         position: "sticky",
         bottom: 0,
-        background: "#512da8",
+        background: "#42415b",
       }}
     >
       <center

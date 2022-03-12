@@ -43,7 +43,7 @@ export default function Ranking() {
     },
     {
       rank: 6,
-      name: "Liquid",
+      name: "Team Liquid",
       points: 499,
       positionStatus: "Retained Same Spot",
       imageName: require("../assets/images/600px-Team_Liquid_2020.png"),
@@ -64,7 +64,7 @@ export default function Ranking() {
     },
     {
       rank: 9,
-      name: "Liquid",
+      name: "Team Liquid",
       points: 499,
       positionStatus: "Retained Same Spot",
       imageName: require("../assets/images/600px-Team_Liquid_2020.png"),
@@ -85,7 +85,7 @@ export default function Ranking() {
     },
     {
       rank: 12,
-      name: "Liquid",
+      name: "Team Liquid",
       points: 499,
       positionStatus: "Retained Same Spot",
       imageName: require("../assets/images/600px-Team_Liquid_2020.png"),
@@ -106,7 +106,7 @@ export default function Ranking() {
     },
     {
       rank: 15,
-      name: "Liquid",
+      name: "Team Liquid",
       points: 499,
       positionStatus: "Retained Same Spot",
       imageName: require("../assets/images/600px-Team_Liquid_2020.png"),
@@ -127,7 +127,7 @@ export default function Ranking() {
     },
     {
       rank: 18,
-      name: "Liquid",
+      name: "Team Liquid",
       points: 499,
       positionStatus: "Retained Same Spot",
       imageName: require("../assets/images/600px-Team_Liquid_2020.png"),
@@ -148,7 +148,7 @@ export default function Ranking() {
     },
     {
       rank: 21,
-      name: "Liquid",
+      name: "Team Liquid",
       points: 499,
       positionStatus: "Retained Same Spot",
       imageName: require("../assets/images/600px-Team_Liquid_2020.png"),
@@ -169,7 +169,7 @@ export default function Ranking() {
     },
     {
       rank: 24,
-      name: "Liquid",
+      name: "Team Liquid",
       points: 499,
       positionStatus: "Retained Same Spot",
       imageName: require("../assets/images/600px-Team_Liquid_2020.png"),
@@ -190,7 +190,7 @@ export default function Ranking() {
     },
     {
       rank: 27,
-      name: "Liquid",
+      name: "Team Liquid",
       points: 499,
       positionStatus: "Retained Same Spot",
       imageName: require("../assets/images/600px-Team_Liquid_2020.png"),
@@ -211,7 +211,7 @@ export default function Ranking() {
     },
     {
       rank: 30,
-      name: "Liquid",
+      name: "Team Liquid",
       points: 499,
       positionStatus: "Retained Same Spot",
       imageName: require("../assets/images/600px-Team_Liquid_2020.png"),

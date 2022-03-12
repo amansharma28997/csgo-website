@@ -15,11 +15,12 @@ export default class FollowUp extends Component {
           maxWidth: "100%",
           //   minWidth: "25rem",
           padding: "5px",
-          height: "20vh",
+          height: "15vh",
           minHeight: "120px",
           cursor: "pointer",
         }}
         elevation={0}
+        variant="outlined"
       >
         <Box
           sx={{
@@ -38,15 +39,15 @@ export default class FollowUp extends Component {
           >
             <Typography
               component="div"
-              variant="h6"
+              variant="subtitle1"
               color="text.disabled"
-              style={{ textTransform: "uppercase" }}
+              style={{ textTransform: "uppercase", fontWeight: 600 }}
             >
               {name}
             </Typography>
             <span>
               <Typography
-                variant="h5"
+                variant="h6"
                 color="text.secondary"
                 component="div"
                 style={{ fontWeight: "900" }}
@@ -54,7 +55,7 @@ export default class FollowUp extends Component {
                 {points} Points
               </Typography>
               <Typography
-                variant="subtitle2"
+                variant="caption"
                 color="text.disabled"
                 component="div"
                 style={{ fontWeight: "900" }}
@@ -80,7 +81,7 @@ export default class FollowUp extends Component {
             flexDirection: "row",
             justifyContent: "center",
             fontWeight: 500,
-            paddingLeft: "1rem",
+            // paddingLeft: "1rem",
           }}
         >
           {rank}

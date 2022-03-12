@@ -3,25 +3,29 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import {
+  createTheme,
+  ThemeProvider,
+  responsiveFontSizes,
+} from "@mui/material/styles";
 
-const theme = createTheme({
+let theme = createTheme({
   palette: {
     primary: {
-      light: "#8559da",
-      main: "#512da8",
-      dark: "#140078",
+      light: "#6e6c88",
+      main: "#42415b",
+      dark: "#1a1b31",
       contrastText: "#fff",
     },
     secondary: {
-      light: "#9a67ea",
-      main: "#673ab7",
-      dark: "#320b86",
+      light: "#8e81d7",
+      main: "#5e54a5",
+      dark: "#2e2b76",
       contrastText: "#fff",
     },
   },
 });
-
+theme = responsiveFontSizes(theme);
 ReactDOM.render(
   <ThemeProvider theme={theme}>
     <React.StrictMode>
